@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@0;1&family=Sarabun:ital@0;1&display=swap');
+
+:root {
+    --color-body: #FAF9F6;
+    --color-heading: #FFDD65;
+    --color-base: #1F5CAD;
+    --color-base2: #100950;
+    --color-brand: #EA6901;
+    --color-brand2: rgb(189, 77, 13);
+    --font-base: "Roboto Mono";
+    --font-base2: "Sarabun";
+}
+
+body {
+    background-color: var(--color-base2);
+    color: var(--color-body);
+    font-family: var(--font-base), monospace;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: var(--color-heading);
+    font-weight: 600;
+}
+a {
+    text-decoration: none;
+    color: var(--color-body);
+    transition: all 0.4s ease;
+}
+a:hover {
+    color: var(--color-brand);
+}
+img {
+    width: 100%;
+}
