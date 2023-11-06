@@ -6,7 +6,7 @@
     --color-base: #1F5CAD;
     --color-base2: #100950;
     --color-brand: #EA6901;
-    --color-brand2: rgb(189, 77, 13);
+    --color-brand2: #720000;
     --font-base: "Roboto Mono";
     --font-base2: "Sarabun";
 }
@@ -30,4 +30,54 @@ a:hover {
 }
 img {
     width: 100%;
+}
+.full-height {
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    border-bottom: 2px solid rgba(255,255,255 0.1);
+}
+
+/*NavBar*/
+.navbar {
+    padding-left: 20px;
+    padding-top: 16px;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,0.2794759825327511) 35%, rgba(0,0,0,0.5953420669577875) 100%);
+    border-bottom: rgba(255, 255, 255, 0.822) solid 1px;
+}
+
+@media(max-width: 991px) {
+    .sidebar {
+        background: rgb(0,0,0);
+    }
+}
+
+/*Home*/
+#get-to-info-btn{
+    color: rgb(165, 159, 143);
+}
+.text-brand-1 {
+    color: rgb(3, 226, 96)
+}
+.text-brand-2 {
+    color: #cf5e01;
+}
+.btn {
+    padding: 12px 28px;
+    font-weight: 700;
+}
+.btn-brand {
+    background-color: var(--color-brand2);
+    border-color: var(--color-brand2);
+    color: rgb(197, 197, 197)
+}
+.btn-brand:hover, .btn-brand:focus {
+    background-color: var(--color-brand2);
+    color: var(--color-body);
+    border-color: var(--color-base2);
 }

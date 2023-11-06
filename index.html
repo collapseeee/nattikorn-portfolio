@@ -10,41 +10,115 @@
     <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
+    <div class="container-fluid">
     <!--Nav Bar-->
-    <nav class="navbar navbar-expand-sm navbar-dark ms-2">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <span class="h2 fw-bold">Nattikorn.</span>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#info">About</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#experience" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Experience
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="#academic-work">Academic Work</a></li>
-                    <li><a class="dropdown-item" href="#performance">Performance</a></li>
-                    <li><a class="dropdown-item" href="#self-improving">Self Improving</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
-                </li>
+        <nav class="navbar navbar-dark fixed-top navbar-expand-sm">
+            <div class="container-xl">
+                <a class="navbar-brand" href="#"><h3>Nattikorn.</h3></a>
+                <button class="navbar-toggler shadow-none border-0px" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!--Side Bar-->
+                <div class="sidebar offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header text-white border-bottom border-1px">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Where to go?</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav align-items-right justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item mx-1">
+                                <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                            </li>
+                            <li class="nav-item mx-1">
+                                <a class="nav-link" href="#about">About</a>
+                            </li>
+                            <li class="nav-item dropdown mx-1">
+                                <a class="nav-link dropdown-toggle" href="#experience" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Experience
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#academic-work">Academic Work</a></li>
+                                <li><a class="dropdown-item" href="#performance">Performance</a></li>
+                                <li><a class="dropdown-item" href="#self-improving">Self Improving</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item mx-1">
+                                <a class="nav-link" href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
+        </nav>
+        <!---->
+        <!--Home-->
+        <div class="content-wrapper">
+            <section id="home" class="full-height">
+                <div class="container align-items-center">
+                    <div class="row">
+                        <div class="col-lg-12 align-items-center">
+                            <img src="assets/images/home-picture.JPG" style="border: 3px solid whitesmoke; border-radius: 50%; width: 200px; box-shadow: 0 3px 24px rgba(255, 253, 253, 0.486); margin-bottom: 32px;">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h1 class="display-4 fw-bold" style="margin-bottom: 20px;">Welcome to <span class="text-brand-1">Nattikorn's</span>
+                                <br><span class="text-brand-2">Portfolio Website!</span></h1>
+                            <p style="margin-bottom: 20px;">I'm a student from Matthayom 6.
+                                <br>I'd love to share more information about myself,
+                                <br>which doesn't appear in the portfolio,
+                                <br>But can be seen here!"</p>
+                            <a href="#about" class="btn btn-brand">Get to know more about me!</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!---->
+            <hr>
+            <!--Info-->
+            <section id="about" class="full-height">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h6 class="text-brand-1" id="info">My information.</h6>
+                            <h1>You are going to know me better.</h1>
+                        </div>
+                    <section id="about" class="about">
+                        <div class="container">
+                            <div class="row mt-4">
+                                <div class="col-lg-4">
+                                <img src="assets/images/infopic.png" class="img-fluid" alt="Nattikorn">
+                                </div>
+                                <div class="col-lg-8 pt-4 pt-lg-0 content">
+                                <h3>Nattikorn Saesue (Tee)</h3>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                    <ul>
+                                        <li><i class="bi bi-chevron-right"></i> <span class="text-brand-1 fw-bold">Age:</span> <span>1 May 1995</span></li>
+                                        <li><i class="bi bi-chevron-right"></i> <span class="text-brand-1 fw-bold">Age:</span> <span>1 May 1995</span></li>
+                                        <li><i class="bi bi-chevron-right"></i> <span class="text-brand-1 fw-bold">Age:</span> <span>1 May 1995</span></li>
+                                        <li><i class="bi bi-chevron-right"></i> <span class="text-brand-1 fw-bold">Age:</span> <span>1 May 1995</span></li>
+                                    </ul>
+                                    </div>
+                                    <div class="col-lg-6">
+                                    <ul>
+                                        <li><i class="bi bi-chevron-right"></i> <span class="text-brand-1 fw-bold">Age:</span> <span>1 May 1995</span></li>
+                                        <li><i class="bi bi-chevron-right"></i> <span class="text-brand-1 fw-bold">Age:</span> <span>1 May 1995</span></li>
+                                        <li><i class="bi bi-chevron-right"></i> <span class="text-brand-1 fw-bold">Age:</span> <span>1 May 1995</span></li>
+                                        <li><i class="bi bi-chevron-right"></i> <span class="text-brand-1 fw-bold">Age:</span> <span>1 May 1995</span></li>
+                                    </ul>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </section>
         </div>
-      </nav>
+    </div>
     <script src="assets/js/aos.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/main.js"></script>
