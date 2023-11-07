@@ -50,6 +50,9 @@ img {
     background: linear-gradient(180deg, rgba(0,0,0,0.2794759825327511) 35%, rgba(0,0,0,0.5953420669577875) 100%);
     border-bottom: rgba(255, 255, 255, 0.822) solid 1px;
 }
+.navbar .nav-link.active {
+    color: var(--color-body);
+}
 
 @media(max-width: 991px) {
     .sidebar {
@@ -81,3 +84,23 @@ img {
     color: var(--color-body);
     border-color: var(--color-base2);
 }
+
+/** Animation **/
+#typewriter {
+    width: 22ch;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }

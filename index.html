@@ -8,13 +8,14 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/line-awesome.min.css">
     <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
-<body>
+<body data-bs-spy="scroll" data-bs-target=".navbar">
     <div class="container-fluid">
     <!--Nav Bar-->
         <nav class="navbar navbar-dark fixed-top navbar-expand-sm">
             <div class="container-xl">
-                <a class="navbar-brand" href="#"><h3>Nattikorn.</h3></a>
+                <a class="navbar-brand" href="https://github.com/collapseeee/nattikorn.github.io"><h3>Nattikorn.github.io</h3></a>
                 <button class="navbar-toggler shadow-none border-0px" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -57,20 +58,20 @@
                 <div class="container align-items-center">
                     <div class="row">
                         <div class="col-lg-12 align-items-center">
-                            <img src="assets/images/home-picture.JPG" style="border: 3px solid whitesmoke; border-radius: 50%; width: 200px; box-shadow: 0 3px 24px rgba(255, 253, 253, 0.486); margin-bottom: 32px;">
+                            <img src="assets/images/home-picture.JPG" data-aos="fade-right" style="border: 3px solid whitesmoke; border-radius: 50%; width: 200px; box-shadow: 0 3px 24px rgba(255, 253, 253, 0.486); margin-bottom: 32px;">
                         </div>
                     </div>
                 </div>
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12">
-                            <h1 class="display-4 fw-bold" style="margin-bottom: 20px;">Welcome to <span class="text-brand-1">Nattikorn's</span>
+                            <h1 class="display-4 fw-bold" style="margin-bottom: 20px;" id="typewriter">Welcome to <span class="text-brand-1">Nattikorn's</span>
                                 <br><span class="text-brand-2">Portfolio Website!</span></h1>
-                            <p style="margin-bottom: 20px;">I'm a student from Matthayom 6.
+                            <p style="margin-bottom: 20px;" data-aos="fade-right">I'm a student from Matthayom 6.
                                 <br>I'd love to share more information about myself,
                                 <br>which doesn't appear in the portfolio,
-                                <br>But can be seen here!"</p>
-                            <a href="#about" class="btn btn-brand">Get to know more about me!</a>
+                                <br>But can be seen here!</p>
+                            <a href="#about" class="btn btn-brand" data-aos="fade-up-right">Get to know more about me!</a>
                         </div>
                     </div>
                 </div>
@@ -81,42 +82,52 @@
             <section id="about" class="full-height">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-12">
+                        <div class="col-lg-12 mt-4" data-aos="fade-down">
                             <h6 class="text-brand-1" id="info">My information.</h6>
                             <h1>You are going to know me better.</h1>
                         </div>
-                    <section id="about" class="about">
-                        <div class="container">
-                            <div class="row mt-4">
-                                <div class="col-lg-4">
-                                <img src="assets/images/infopic.png" class="img-fluid" alt="Nattikorn">
-                                </div>
-                                <div class="col-lg-8 pt-4 pt-lg-0 content">
-                                <h3>Nattikorn Saesue (Tee)</h3>
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                    <ul>
-                                        <li><i class="bi bi-chevron-right"></i> <span class="text-brand-1 fw-bold">Age:</span> <span>1 May 1995</span></li>
-                                        <li><i class="bi bi-chevron-right"></i> <span class="text-brand-1 fw-bold">Age:</span> <span>1 May 1995</span></li>
-                                        <li><i class="bi bi-chevron-right"></i> <span class="text-brand-1 fw-bold">Age:</span> <span>1 May 1995</span></li>
-                                        <li><i class="bi bi-chevron-right"></i> <span class="text-brand-1 fw-bold">Age:</span> <span>1 May 1995</span></li>
-                                    </ul>
+                        <section id="about" class="about">
+                            <div class="container">
+                                <div class="row mt-4">
+                                    <div class="col-lg-4">
+                                    <img src="assets/images/infopic.png" class="img-fluid" alt="Nattikorn" data-aos="zoom-in">
                                     </div>
-                                    <div class="col-lg-6">
-                                    <ul>
-                                        <li><i class="bi bi-chevron-right"></i> <span class="text-brand-1 fw-bold">Age:</span> <span>1 May 1995</span></li>
-                                        <li><i class="bi bi-chevron-right"></i> <span class="text-brand-1 fw-bold">Age:</span> <span>1 May 1995</span></li>
-                                        <li><i class="bi bi-chevron-right"></i> <span class="text-brand-1 fw-bold">Age:</span> <span>1 May 1995</span></li>
-                                        <li><i class="bi bi-chevron-right"></i> <span class="text-brand-1 fw-bold">Age:</span> <span>1 May 1995</span></li>
-                                    </ul>
+                                    <div class="col-lg-8 pt-4 pt-lg-0 content">
+                                    <h3 data-aos="fade-right">Nattikorn Saesue (Tee)</h3>
+                                    <div class="row">
+                                        <div class="col-lg-12" data-aos="fade-right">
+                                            <ul>
+                                                <li><i class="bi bi-chevron-right"></i> <i class="las la-calendar"></i> <span class="text-brand-1 fw-bold">Date of Birth:</span> <span>28 Aug 2005</span></li>
+                                                <li class="mt-1"><i class="bi bi-chevron-right"></i> <i class="las la-user-clock"></i> <span class="text-brand-1 fw-bold">Age:</span> <span>18 Years</span></li>
+                                                <li class="mt-1"><i class="bi bi-chevron-right"></i> <i class="las la-male"></i></i> <span class="text-brand-1 fw-bold">Nationality:</span> <span>Thai</span></li>
+                                                <li class="mt-1"><i class="bi bi-chevron-right"></i> <i class="las la-male"></i> <span class="text-brand-1 fw-bold">Race:</span> <span>Thai</span></li>
+                                                <li class="mt-1"><i class="bi bi-chevron-right"></i> <i class="las la-school"></i> <span class="text-brand-1 fw-bold">Curriculum:</span> <span>Science-Math</span></li>
+                                                <li class="mt-1"><i class="bi bi-chevron-right"></i> <i class="las la-school"></i> <span class="text-brand-1 fw-bold">Program:</span> <span>Engineering and Applied Science</span></li>
+                                                <li class="mt-1"><i class="bi bi-chevron-right"></i> <i class="las la-heart"></i> <span class="text-brand-1 fw-bold">Interested:</span> <span>AI, Computer Hardware, Fullstack Development</span></li>
+                                            </ul>
+                                        </div>
                                     </div>
-                                </div>
+                                    <h4 class="text-brand-2" data-aos="fade-right">My skill:</h4>
+                                    <div class="row">
+                                        <div class="col-lg-12" data-aos="fade-right">
+                                            <ul>
+                                                <li><i class="bi bi-chevron-right"></i> <i class="las la-globe"></i> <span class="text-brand-1 fw-bold">Language:</span> <span>Thai(Native), English(B2), Chinese(Elementary), French(Beginner)</span></li>
+                                                <li class="mt-1"><i class="bi bi-chevron-right"></i> <i class="las la-hourglass-half"></i> <span class="text-brand-1 fw-bold">Experience: </span> <span>AI, Cyber Security, Web Development</span></li>                                            
+                                                <li class="mt-1"><i class="bi bi-chevron-right"></i> <i class="las la-brain"></i> <span class="text-brand-1 fw-bold">Special Ability:</span> <span>Self-Learning, Logical Thinking, Programming, Drumming</span></li>
+                                                <li class="mt-1"><i class="bi bi-chevron-right"></i> <i class="las la-code"></i> <span class="text-brand-1 fw-bold">Programming:</span> <span>Java, Python, HTML, CSS, JavaScript</span></li>
+                                                <li class="mt-1"><i class="bi bi-chevron-right"></i> <i class="las la-desktop"></i> <span class="text-brand-1 fw-bold">Software:</span> <span>Canva, Terminal, Git, Bootstrap, VSCode, MS Office</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </section>
+                        </section>
+                    </div>
                 </div>
             </section>
+            <!---->
+            <hr>
+
         </div>
     </div>
     <script src="assets/js/aos.js"></script>
